@@ -1,8 +1,0 @@
-O que é logica de prgramação
-Inputs e OutInputs
-Variaveis e Constantes
-Condicionais
-Array, Vetores
-Loopings
-Funções
-Objetos
