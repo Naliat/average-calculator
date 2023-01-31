@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Médias do ano</h1>
+
+    <script>
+
+        // Média
+
+
+        var nome = prompt("Digite seu nome.");
+        document.write(nome);
+        alert("Nome conectado com sucesso " + nome + "!" + " Agora digite as notas para efetuar as médias");
+
+        var nota1 = prompt(" Digite a sua nota1")
+        var nota2 = prompt(" Digite a sua nota2")
+        var nota3 = prompt(" Digite a sua nota3")
+        var nota4 = prompt(" Digite a sua nota4")
+
+        var soma = (parseFloat(nota1) +
+            parseInt(nota2) +
+            parseInt(nota3) +
+            parseInt(nota4));
+
+
+        var media = soma / 4;
+        
+        alert(" Essa é a sua media " + media)
+
+        // Se a media é menor que 6 é reprovado!
+        // Se a media é maior que 6 é aprovado!
+
+
+if(media <6)  {
+alert("Estude mais, você foi reprovado !  :( ")
+}else{
+    alert("Parabèns!! Você está aprovado! (: ")
+}
+
+
+        document.write(" a soma das notas são " + soma + "<br>");
+        document.write(" A média das notas são " + media + "<br>");
+
+
+
+
+        // Exemplo de média ponderada
+
+        alert("Agora é a média ponderada.")
+
+        var notaone = parseFloat(prompt(" Digite a sua 1° nota"))
+        var notatwo = parseFloat(prompt(" Digite a sua 2° nota"))
+        var notatree = parseFloat(prompt(" Digite a sua 3° nota"))
+        var notafour = parseFloat(prompt(" Digite a sua 4° nota"))
+
+        var mediaponderada = notaone * 1 + notatwo * 2 + notatree * 3 + notafour * 4 / (1 + 2 + 3 + 4);
+
+        alert(" A média é: " + mediaponderada.toFixed(2));
+
+        document.write("Esse é a sua média ponderada " + mediaponderada)
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
